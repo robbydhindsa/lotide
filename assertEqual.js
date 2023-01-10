@@ -4,9 +4,9 @@ const redEmoji = String.fromCodePoint(0x1274C);
 
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
-    console.log(greenEmoji + greenEmoji + greenEmoji + "Assertion Passed: " + actual + " === " + expected);
+    console.log(`${greenEmoji}${greenEmoji}${greenEmoji} Assertion Passed: ${actual} === ${expected}`);
   } else
-    console.log(redEmoji + redEmoji + redEmoji + "Assertion Failed: " + actual + " !== " + expected);
+    console.log(`${redEmoji}${redEmoji}${redEmoji} Assertion Failed: ${actual} !== ${expected}`);
 };
 
 // TEST CODE
