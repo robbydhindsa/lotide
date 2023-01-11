@@ -10,7 +10,6 @@ const assertEqual = function(actual, expected) {
 };
 
 // eqArrays FUNCTION
-
 const eqArrays = function(arr1, arr2) {
   let boolValues = [];
   if (arr1.length === arr2.length) {
