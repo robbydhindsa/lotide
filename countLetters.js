@@ -21,7 +21,7 @@ const countLetters = function(sentence) {
   }
   delete results[' '];
   return results;
-}
+};
 
 // TEST CODE
 console.log(countLetters("lighthouse in the house"));
