@@ -1,18 +1,4 @@
-// eqArrays FUNCTION
-const eqArrays = function(arr1, arr2) {
-  let boolValues = [];
-  if (arr1.length === arr2.length) {
-    for (let i = 0; i < arr1.length; i++) {
-      if (arr1[i] === arr2[i]) {
-        boolValues.push(true);
-      } else boolValues.push(false);
-    }
-  } else return false;
-
-  if (boolValues.includes(false)) {
-    return false;
-  } else return true;
-};
+const eqArrays = require('./eqArrays');
 
 // FUNCTION IMPLEMENTATION
 const greenEmoji = String.fromCodePoint(0x12705);
@@ -26,6 +12,4 @@ const assertArraysEqual = function(arr1, arr2) {
     console.log(`${redEmoji}${redEmoji}${redEmoji} Assertion Failed: ${arr1} !== ${arr2}`);
 }
 
-// TEST CODE
-assertArraysEqual([1, 2, 3], [1, 2, 3]); // => should PASS
-assertArraysEqual([1, 2, 3], [3, 2, 1]); // => should FAIL
+module.exports = assertArraysEqual;
